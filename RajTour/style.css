@@ -6,7 +6,6 @@
 }
 html, body{
     height:100%;
-    margin: 0;
     padding:0;
     background-color: #fffdd0;
 }
@@ -19,6 +18,7 @@ html, body{
     text-align: center;
     justify-content: center;
     margin-top: 50px;
+    margin-top: 80px;
 }
 .navbar{
     height:80px;
@@ -42,7 +42,7 @@ a{
     text-decoration: none;
     color:black;
 }
-a:hover{
+a:hover, .head a:hover{
     text-decoration:none;
     color:crimson;
 }
@@ -61,6 +61,7 @@ a:hover{
     margin-top: 90px;
     width:100%;
     height:90%;
+    margin-bottom: 40px;
 }
 .video01 video{
     width: 100%;
@@ -75,7 +76,6 @@ a:hover{
     padding: 12px;
     box-sizing: border-box;
     border: 1px solid black;
-
     position: absolute; 
     bottom: 20px;       
     z-index: 10; 
@@ -96,32 +96,16 @@ a:hover{
     width:100%;
     object-fit: cover;
 }
-.space{
+/* .space{
     width:100%;
     height:20px;
-}
-.bg1{
+} */
+.bg1,.bg2,.bg5,.bg6{
     width:25vw;                       
     height:50vh;
 }
-.bg2{
-    width:25vw;              
-    height:50vh;
-}
-.bg3{
+.bg3,.bg4{
     width:50vw;                   
-    height:50vh;
-}
-.bg4{
-    width:50vw;                          
-    height:50vh;
-}
-.bg5{
-    width:25vw;                        
-    height:50vh;
-}
-.bg6{
-    width:25vw;                     
     height:50vh;
 }
 .bgNEW{
@@ -130,17 +114,19 @@ a:hover{
 .pic38 {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    /* object-fit: cover;  */
+    background-size: cover;
 }
 .image1{
-    width:25vh;
-    height:25vh;
+    width:15vw;
+    height:28vh;
     position: relative;
 }
 .image1 button {
     position: absolute; 
-    top: 100px;           
-    left: 50px;      
+    top: 50%;                         /* 12.5vh;*/
+    left:50%;
+    transform: translate(-50%, -50%);                             /* 4vw;*/
     color: black;      
     margin: 0;  
     background-color:#fffdd0 ;    
@@ -170,6 +156,7 @@ h3{
     justify-content: center;
     width:100%;
     height:50%;
+    margin-top: 60px;
 }
 footer{
     margin-top:20px;
@@ -196,8 +183,6 @@ ul a{
     justify-content: center;
     margin-bottom:20px;
 }
-
-
 .videoElement{
     aspect-ratio: 16 / 9;
     width: 50%;

@@ -1,0 +1,35 @@
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown ul {
+    display: none;
+    position: absolute;
+}
+
+.dropDown:hover ul {
+    display: block;
+}
+
+.dropDownItems{
+    background-color:#fffdd0;
+    border-radius: 5px;
+}
+.dropDownItems li {
+    white-space: nowrap;
+    width: max-content; 
+}
+ul{
+    list-style-type: none;
+    padding: 15px;
+}
+
+li{
+    padding: 5px;
+}
+.dropDown .dropDownItems li:hover {
+    color: crimson;
+    background-color:antiquewhite;
+    border-radius: 5px;
+}
